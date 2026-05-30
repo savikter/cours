@@ -7,7 +7,13 @@
 # 1. "aabc" -> {"a": 2, "b": 1, "c": 1}
 # 2. "" -> {}
 def count_chars(s: str) -> dict[str, int]:
-    pass
+    res = {}
+    for char in s:
+        if char in res:
+            res[char] += 1
+        else:
+            res[char] = 1
+    return res
 
 
 # Do not change the below's code

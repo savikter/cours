@@ -3,8 +3,9 @@
 #
 # HINT: Use `set`
 def unique(l: list[int]) -> list[int]:
-    pass
+    return list(set(l))
 
+print(unique([1, 2, 2, 3, 1, 3, ]))
 
 if __name__ == "__main__":
     res = unique([1, 1, 1, 2, 2, 2, 3])
