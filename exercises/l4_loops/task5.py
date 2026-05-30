@@ -3,8 +3,12 @@
 #
 # Return `True` is character is present. Return `False` otherwise
 def has_char(s: str, c: str) -> bool:
-    pass
+    for char in s:
+        if char == c:
+            return True
+    return False
 
+print(has_char('lfhyt','b'))
 
 # Do not change the below's code
 if __name__ == "__main__":
