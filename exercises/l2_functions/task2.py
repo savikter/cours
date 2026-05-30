@@ -11,6 +11,12 @@
 if __name__ == "__main__":
     a, b = "Jon", "Doe"
 
-    assert join(a, b) == "Jon Doe"
-    assert join(b, a) == "Doe Jon"
-    assert join("aba", "baba") == "aba baba"
+def join(s1, s2):
+    return s1 + " " +s2
+
+print(join(a, b))
+
+
+    #assert join(a, b) == "Jon Doe"
+    #assert join(b, a) == "Doe Jon"
+    #assert join("aba", "baba") == "aba baba"

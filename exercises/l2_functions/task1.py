@@ -4,8 +4,12 @@ Number = int | float | complex
 # Write the body of the function to make the script
 # work without errors
 def sqr(n: Number) -> Number:
-    pass
+    return n * n
 
+user_input = eval(input("Enter number: "))
+result = sqr(user_input)
+
+print(result)
 
 if __name__ == "__main__":
     # Do not change the below asserts
