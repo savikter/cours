@@ -8,8 +8,8 @@ L10_PATH = Path(__file__)
 #
 # HINT. Search for joinpath method or / operator (in context of Path)
 def path_exists(path: str) -> bool:
-    pass
-
+    path = L10_PATH.parent / path
+    return path.exists()
 
 if __name__ == "__main__":
     assert path_exists(".") is True
