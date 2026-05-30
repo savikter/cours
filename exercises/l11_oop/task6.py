@@ -2,6 +2,9 @@
 #
 # HINT: use property
 class Person:
+    @property
+    def full_name(self) -> str:
+        return f"{self.first_name} {self.last_name}"
 
     def __init__(self, first_name: str, last_name: str):
         self.first_name = first_name

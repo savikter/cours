@@ -2,6 +2,8 @@
 #
 # HINT: research magic methods
 class Point:
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
 
     def __init__(self, x: int, y: int):
         self.x = x
