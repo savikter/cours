@@ -1,5 +1,9 @@
 def proxy_pop(l: list[int]) -> int:
-    pass
+    n = l[-1]
+    del l[-1]
+    return n
+
+
 
 
 # Do not change the below's code

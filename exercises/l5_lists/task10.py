@@ -5,7 +5,10 @@ from typing import Any
 # NOTE: the function must create a new list.
 # Do not modify list `l`.
 def reverse(l: list[Any]) -> list[Any]:
-    pass
+    res = []
+    for i in range(len(l) - 1, -1, -1):
+        res.append(l[i])
+    return res
 
 
 # Do not change the below's code
@@ -16,3 +19,6 @@ if __name__ == "__main__":
     assert l == [3, 4, 5]
 
     assert reverse(["c", "b", "a"]) == ["a", "b", "c"]
+
+l = ["c", "b", "a"]
+print(reverse(l))

@@ -4,7 +4,12 @@ from typing import Any
 # Write the body of the function that returns
 # the last element from the list `l`
 def last(l: list[Any]) -> Any:
-    pass
+    num = l[-1]
+    return num
+
+print(last([1, 2, 3]))
+print(last(["a", "b", "c"]))
+print(last([True, False, True]))
 
 
 # Do not change the below's code

@@ -1,8 +1,12 @@
 # Write the body of the function that returns
 # a list which contains integers in a range [1; n]
 def fill(n: int) -> list[int]:
-    pass
+    res_list = []
+    for i in range(1, n + 1):
+        res_list.append(i)
+    return res_list
 
+print(fill(3))
 
 # Do not change the below's code
 if __name__ == "__main__":

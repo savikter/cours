@@ -1,24 +1,26 @@
 from typing import Any
 
 
-# Write a function that extends list `l1` with elements
-# from list `l2`.
-#
-# For example,
-# before function call:
-# l1: [1, 2]
-# l2: [3, 4]
-#
-# after function call:
-# l1: [1, 2, 3, 4]
-# l2: [3, 4]
-def proxy_extend(l1: list[Any], l2: list[Any]):
-    pass
+# Write a function that combines two lists.
+# NOTE: function must create a new list.
+# Do not modify lists passed as arguments
+def combine(l1: list[Any], l2: list[Any]) -> list[Any]:
+    res = []
+    for item in l1:
+        res.append(item)
+    for item in l2:
+        res.append(item)
+    return res
 
 
 # Do not change the below's code
 if __name__ == "__main__":
     l1, l2 = [1, 2, 3], [4, 5, 6]
-    proxy_extend(l1, l2)
-    assert l1 == [1, 2, 3, 4, 5, 6]
+
+    assert combine(l1, l2) == [1, 2, 3, 4, 5, 6]
+    assert l1 == [1, 2, 3]
     assert l2 == [4, 5, 6]
+
+    assert combine([1, 2], ["a", "b"]) == [1, 2, "a", "b"]
+
+print(combine([1, 2, 3], ["a", "b"]))

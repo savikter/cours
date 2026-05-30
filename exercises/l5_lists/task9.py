@@ -7,7 +7,9 @@ Number = int | float | complex
 # NOTE: that function modifies list `l` inplace;
 # it should return nothing.
 def double(l: list[Number]):
-    pass
+    for i in range(len(l)):
+        l[i] *= 2
+
 
 
 # Do not change the below's code
@@ -23,3 +25,7 @@ if __name__ == "__main__":
     l = [0.2, 0.4]
     double(l)
     assert l == [0.4, 0.8]
+
+l = [0.2, 4, 1, 2]
+double(l)
+print(l)

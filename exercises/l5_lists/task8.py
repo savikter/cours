@@ -5,7 +5,10 @@ from typing import Any
 # is present in the list `l`.
 # Return `True` if present and `False` otherwise
 def contains(l: list[Any], val: Any) -> bool:
-    pass
+    for item in l:
+        if item == val:
+            return True
+    return False
 
 
 # Do not change the below's code
@@ -17,3 +20,5 @@ if __name__ == "__main__":
     assert contains(l, 2) is True
     assert contains(l, "c") is False
     assert contains(["a", "c", "c"], "c") is True
+
+print(contains(l, 1))

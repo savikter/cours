@@ -5,7 +5,12 @@ from typing import Any
 # NOTE: function must create a new list.
 # Do not modify lists passed as arguments
 def combine(l1: list[Any], l2: list[Any]) -> list[Any]:
-    pass
+    res = []
+    for item in l1:
+        res.append(item)
+    for item in l2:
+        res.append(item)
+    return res
 
 
 # Do not change the below's code
@@ -17,3 +22,5 @@ if __name__ == "__main__":
     assert l2 == [4, 5, 6]
 
     assert combine([1, 2], ["a", "b"]) == [1, 2, "a", "b"]
+
+print(combine([1, 2, 3], ["a", "b"]))

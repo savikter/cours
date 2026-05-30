@@ -5,8 +5,18 @@
 # If argument `reverse` is set to `True`, the function
 # must return a list which contains integers in a range [n; 1]
 def fill(n: int, reverse: bool = False) -> list[int]:
-    pass
+    res_list = []
+    for i in range(1,n+1):
+        res_list.append(i)
+        if n == 0:
+            return 0
 
+    if reverse:
+        return list(reversed(res_list))
+    else:
+        return res_list
+
+print(fill(4, True))
 
 # Do not change the below's code
 if __name__ == "__main__":
