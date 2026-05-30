@@ -5,7 +5,10 @@
 # 1. has_prefix("apple", "app") -> True
 # 2. has_prefix("apple", "applg") -> False
 def has_prefix(s: str, prefix: str) -> bool:
-    pass
+    return s[:len(prefix)]== prefix
+
+
+print(has_prefix("apple", "app"))
 
 
 # Do not change the below's code

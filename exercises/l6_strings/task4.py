@@ -7,7 +7,13 @@
 #
 # NOTE: use // division to define slice start index
 def middle(s: str, n: int) -> str:
-    pass
+    num = (len(s)-n)//2
+    if n >= len(s):
+        return s
+
+    return s[num:num+n]
+
+print(middle("abcdaeqweqe", 5))
 
 
 # Do not change the below's code
