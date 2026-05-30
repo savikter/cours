@@ -3,6 +3,10 @@ if __name__ == "__main__":
 
     s = 0
     for i, v in enumerate(l):
+        try:
+            s += i / v
+        except ZeroDivisionError:
+            pass
         # Use try...except block to handle the error.
         # If error happens add nothing to `s`, just continue the loop
-        s = i / v
+print(s)
