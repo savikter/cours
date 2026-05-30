@@ -1,7 +1,9 @@
 # Write body of the function to make the script work without errors
 def can_vote(age: int) -> bool:
-    pass
-
+    return age >= 18
+if __name__ == "__main__":
+    age = int(input("Write you age: "))
+    print(can_vote(age))
 
 # Do not change the below's code
 if __name__ == "__main__":

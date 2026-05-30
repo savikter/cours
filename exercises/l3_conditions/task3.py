@@ -15,7 +15,19 @@ class Keyword(Enum):
 def word2token(word: str) -> Keyword:
     if word == "if":
         return Keyword.IF
+    if word == "while":
+        return Keyword.WHILE
+    if word == "for":
+        return Keyword.FOR
+    if word == "class":
+        return Keyword.CLASS
+    return Keyword.IDENTIFIER
 
+
+if __name__ == "__main__":
+    word = input("Write you word: ")
+    token = word2token(word)
+    print(f"Result: {token}")
 
 # Do not change the below's code
 if __name__ == "__main__":

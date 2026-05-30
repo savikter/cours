@@ -1,7 +1,18 @@
 # Write the body of the function to make the script work without errors
+score = int(input("Enter score: "))
 def grade(score: int) -> str:
-    pass
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
 
+print(grade(score))
 
 if __name__ == "__main__":
     # Do not change the below asserts
